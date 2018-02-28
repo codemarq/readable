@@ -16,10 +16,10 @@ const Header = () => {
               <Link className="nav-link active" to="/">Home <span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item active">
-              <Link to="about" className="nav-link active">About</Link>
+              <Link to="/about" className="nav-link active">About</Link>
             </li>
             <li className="nav-item active">
-              <Link to="posts" className="nav-link active">Posts</Link>
+              <Link to="/posts" className="nav-link active">Posts</Link>
             </li>
           </ul>
         </div>

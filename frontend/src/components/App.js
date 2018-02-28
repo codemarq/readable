@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Header from './common/Header'
-import HomePage from './home/HomePage'
+import routes from '../routes'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header/>
-        <HomePage/>
+        {routes}
       </div>
     );
   }
