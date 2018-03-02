@@ -5,9 +5,13 @@ import routes from '../routes'
 class App extends Component {
   render() {
     return (
-      <div className="App container">
+      <div className="App">
         <Header/>
-        {routes}
+        <div className="container">
+          {routes}
+        </div>
+        <div id="#response-container">
+        </div>
       </div>
     );
   }
