@@ -1,6 +1,6 @@
 // initial state
 export const LOAD_POSTS_SUCCESS = 'LOAD_POSTS_SUCCESS'
-
+export const LOAD_COMMENTS_SUCCESS = 'LOAD_COMMENTS_SUCCESS'
 // post actions
 export const CREATE_POST_SUCCESS = 'CREATE_POST_SUCCESS'
 export const EDIT_POST_SUCCESS = 'EDIT_POST_SUCCESS'

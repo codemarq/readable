@@ -1,5 +1,5 @@
 import * as types from '../actions/actionTypes'
-import * as postsApi from '../api/postsApi'
+import * as Api from '../api/backendApi'
 
 export const loadPostsSuccess = (posts) => {
 	return {
@@ -17,7 +17,7 @@ export const createPostSuccess = (post) => {
 
 export const loadPosts = () => {
 	return (dispatch) => {
-		return postsApi.getPosts().then(posts => {
+		return Api.getPosts().then(posts => {
 			dispatch(loadPostsSuccess(posts))
 		}).catch(error => {
 			throw(error)
