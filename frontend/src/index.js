@@ -8,9 +8,11 @@ import { loadPosts } from './actions/postActions'
 import App from './components/App'
 import './styles/index.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// import { loadComments } from './actions/commentActions';
 
 const store = configureStore()
 store.dispatch(loadPosts())
+// store.dispatch(loadComments())
 
 render(
 	<Provider store={store}>

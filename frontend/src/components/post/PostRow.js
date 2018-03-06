@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 const PostRow = ({post}) => {
 	return (
 		<div className="card">
-			<h6 className="card-header text-right">{post.author} at {moment(post.timestamp).format('MMMM Do YYYY, h:mm:ss a')}</h6>
+			<h6 className="card-header"><strong>{post.author}</strong> at <em>{moment(post.timestamp).format('MMMM Do YYYY, h:mm:ss a')}</em></h6>
 			<div className="card-body">
 				<h5 className="card-title">{post.title}</h5>
 				<p className="card-text">{post.body}</p>

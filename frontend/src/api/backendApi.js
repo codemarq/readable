@@ -29,6 +29,13 @@ export const getPosts = () =>
   }).then(res => res.json())
     .catch(e => requestError(e, 'getPosts'))
 
+export const getCommentsByPostId = (postId) => {
+  fetch(`${url}/posts/${postId}/comments`, {
+    headers: headers
+  }).then(res => res.json())
+    .catch(e => requestError(e, 'getComments'))
+}
+
 export const getPostsByCat = (category) => 
   fetch(`${url}/${category}/posts`, {
     headers: headers

@@ -1,5 +1,5 @@
 import * as actionTypes from './actionTypes'
-import * as api from '../api/backendApi'
+import * as Api from '../api/backendApi'
 
 export const loadCommentsSuccess = (comments) => {
 	return {
@@ -8,10 +8,11 @@ export const loadCommentsSuccess = (comments) => {
 	}
 }
 
-export const loadComments = (comments) => {
+export const loadComments = (postId) => {
+	
 	return (dispatch) => {
-		return Api.getPosts().then(posts => {
-			dispatch(loadPostsSuccess(posts))
+		return Api.getCommentsByPostId(postId).then(comments => {
+			dispatch(loadCommentsSuccess(comments))
 		}).catch(error => {
 			throw(error)
 		})

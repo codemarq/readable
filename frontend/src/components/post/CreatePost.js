@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import serializeForm from 'form-serialize'
+// import serializeForm from 'form-serialize'
 // import PropTypes from 'prop-types'
 
 class CreatePost extends Component {
 	formSubmit (e) {
 		e.preventDefault()
-		const values = serializeForm(e.target, { hash: true })
+		// const values = serializeForm(e.target, { hash: true })
 		// if (this.props.onCreatePost) {
 		// 	this.props.onCreatePost(values)
 		// }
