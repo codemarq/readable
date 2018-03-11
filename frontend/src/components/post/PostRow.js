@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import moment from 'moment'
 import PropTypes from 'prop-types'
+import CommentsNavBar from '../common/CommentsNavBar'
+import VoteNavBar from '../common/VoteNavBar'
 
 const PostRow = ({post}) => {
 	return (
@@ -10,7 +11,8 @@ const PostRow = ({post}) => {
 			<div className="card-body">
 				<h5 className="card-title">{post.title}</h5>
 				<p className="card-text">{post.body}</p>
-				<Link to="/comment" className="btn btn-primary">Comment</Link>
+				<CommentsNavBar/>
+				<VoteNavBar/>
 			</div>
 		</div>
 	)
