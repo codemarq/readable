@@ -5,7 +5,7 @@ import FaPlusCircle from 'react-icons/lib/fa/plus-circle'
 
 const CategoryDropDown = () => {
 	return (
-		<div className="collapse navbar-collapse" id="navbarSupportedContent">
+		<div className="collapse navbar-collapse col-md-6" id="navbarSupportedContent">
 			<ul className="navbar-nav mr-auto">
 				<li className="nav-item active">
 					<Link className="nav-link active" to="/">Home <span className="sr-only">(current)</span></Link>

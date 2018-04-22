@@ -11,9 +11,17 @@ const PostRow = ({post}) => {
 			<div className="card-body">
 				<h5 className="card-title">{post.title}</h5>
 				<p className="card-text">{post.body}</p>
-				<CommentsNavBar/>
-				<VoteNavBar/>
 			</div>
+
+				<nav className="navbar navbar-expand-md navbar-light justify-content-between">
+					<div>
+						<CommentsNavBar className="justify-content-start"/>
+					</div>
+					<div>
+						<VoteNavBar className="justify-content-end"/>
+					</div>
+				</nav>
+
 		</div>
 	)
 }
