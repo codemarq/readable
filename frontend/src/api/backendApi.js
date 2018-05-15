@@ -49,7 +49,7 @@ export const getPostDetails = (id) =>
     .catch(e => requestError(e, 'getPostDetails'))
 
 // POST methods
-export const newPost = (id, timestamp=Date.now(),title, body, author, category) => 
+export const newPost = (id, timestamp=Date.now(), title, body, author, category) => 
   fetch(`${url}/posts`, {
     headers: headers,
     method: 'POST',

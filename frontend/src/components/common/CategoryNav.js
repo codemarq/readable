@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import FaPlusCircle from 'react-icons/lib/fa/plus-circle'
+// import FaPlusCircle from 'react-icons/lib/fa/plus-circle'
 // import PropTypes from 'prop-types'
 
 const CategoryDropDown = () => {

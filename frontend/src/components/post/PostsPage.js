@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import PostList from './PostsList'
+import FaPlusCircle from 'react-icons/lib/fa/plus-circle'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
@@ -10,6 +12,9 @@ class PostsPage extends Component {
 		return (
 			<div className="jumbotron">
 				<h2 className="page-title">Posts</h2>
+				<div>
+          <Link to="/createPost" className="btn btn-success"><FaPlusCircle/> New</Link>
+        </div>
 				<PostList posts={posts}/>
 			</div>
 		)
